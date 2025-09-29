@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./App.css";
 
-const WS_URL = "ws://localhost:8080";
+const WS_URL = import.meta.env.VITE_WS_URL;
 
 function App() {
   const [roomId, setRoomId] = useState("");
